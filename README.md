@@ -18,7 +18,7 @@ Afterwards you will need to draw.exe inside the dist folder and move it to the D
 
 <h2> How does it work? </h2>
 Simply open the app, select an image, go into overlay mode, scale or move the image as you desire, go back to main menu and press y. The bot will start drawing.
-![](https://i.imgur.com/DB2yprc.gif)
+![test](https://i.imgur.com/DB2yprc.gif)
 <h2> Where does it work? </h2>
 Technically universal, just make sure to select the brush tool and set to 1px or the smallest option for brush tool and execute. The bot will draw at your image with your mouse.
 <h3> Scribbl </h3>
