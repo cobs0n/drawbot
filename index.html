@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Drawbot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            overflow: hidden; 
+        }
+
+        #formContainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 100;
+        }
+
+        #toggleButton {
+            position: fixed;
+            top: 20px;
+            right: 100px;
+            z-index: 101;
+        }
+
+        #minimizeButton {
+            position: fixed;
+            top: 20px;
+            right: 60px;
+            z-index: 101;
+        }
+
+        #closeButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 101;
+        }
+        .resizable {
+            position: absolute;
+            border: 2px dashed #000;
+            cursor: move;
+        }
+
+        .image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            user-select: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="formContainer">
+        <h1>
+            Simple Draw Bot
+        </h1>
+        <h3> By cobs0n </h3>
+
+        <p id="msg">Select an image to proceed.</p>
+        <input id="file-input" type="file" />
+        <div id="imageInfo">
+            <h2>
+                Image Info
+            </h2>
+
+            <p>Last Position: <span id="lastPosition"></span></p>
+            <p>Last Width: <span id="lastWidth"></span></p>
+            <p>Last Height: <span id="lastHeight"></span></p>
+        </div>
+        <h2>
+            Controls:
+        </h2>
+        <p> Press y to start </p>
+        <p> Press u to stop </p>
+        <p> Press x to close app (killswitch) </p>
+
+    </div>
+    <p id="debug"></p>
+    <div id="overlay">
+        <div class="resizable" id="resizable">
+            <img id="image" class="image" alt="Draggable and Scalable Image">
+        </div>
+
+    </div>
+    <button id="toggleButton">Toggle Overlay</button>
+    <button id="minimizeButton">_</button>
+
+    <button id="closeButton">X</button>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
