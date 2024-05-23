@@ -5,6 +5,7 @@ A simple black and white drawbot, works on scribbl.
 You can download it as a precompiled or compile it from scratch. You can find precompiled version <a href="">here</a>
 <h2> Compile from source </h2>
 You need to have node and python installed. Afterwards you begin by running these commands:
+
 ```
 $ git clone https://github.com/cobs0n/drawbot
 $ cd drawbot/
@@ -14,6 +15,7 @@ $ npm install electron-packager -g
 $ pyinstaller --onefile draw.py 
 $ electron-packager . drawbot --arch=x64 --asar
 ```
+
 Afterwards you will need to draw.exe inside the dist folder and move it to the Drawbot-win32-x64 folder and then you can start the Drawbot app.
 
 <h2> How does it work? </h2>
