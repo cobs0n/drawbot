@@ -2,7 +2,7 @@
 A simple black and white drawbot, works on scribbl.
 
 <h1> Installation </h1>
-You can download it as a precompiled or compile it from scratch. You can find precompiled version <a href="">here</a>
+You can download it as a precompiled or compile it from scratch. You can find precompiled version <a href="https://github.com/cobs0n/drawbot/releases/tag/drawbot">here</a>
 <h2> Compile from source </h2>
 You need to have node and python installed. Afterwards you begin by running these commands:
 
